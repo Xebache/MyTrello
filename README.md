@@ -30,6 +30,8 @@
   <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/login.png" height="75" />
   <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/boards.png" height="75" />
   <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/board.png" height="75" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/collaborators.png" height="75" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/card.png" height="75" />
 </div>
 
 ## Miscellaneous

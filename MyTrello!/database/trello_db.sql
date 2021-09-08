@@ -158,7 +158,7 @@ CREATE TABLE `comment` (
 
 INSERT INTO `comment` (`ID`, `Body`, `CreatedAt`, `ModifiedAt`, `Author`, `Card`) VALUES
 (1, 'Ceci est un commentaire', '2020-11-27 14:45:39', NULL, 5, 6),
-(2, 'Voilà un autre commentaire', '2020-11-27 14:46:02', NULL, 1, 6);
+(2, 'Voila un autre commentaire', '2020-11-27 14:46:02', NULL, 1, 6);
 
 -- --------------------------------------------------------
 
