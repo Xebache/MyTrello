@@ -18,7 +18,7 @@
  He may invite other users to collaborate on his board. These collaborators can edit or delete columns and cards.
 
  The admins have access to all the boards of the database and have the right to edit, delete them.
- They manage also the users, creating, editing or deleting them.
+ They also manage a list of all the users, creating, editing or deleting them.
   
  If a card has an expiration date, it appears in the calendar. 
   
