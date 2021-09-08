@@ -35,3 +35,7 @@
 </div>
 
 ## Miscellaneous
+
+ ### Installation
+
+ ### List of users
