@@ -15,6 +15,6 @@
 
  <div display="flex" flex-direction="row" justify-content="space-around" align-items="center" flex-wrap="wrap" align="center">
   <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/login.png" height="75" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/boards.svg" height="75" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/board.svg" height="75" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/boards.png" height="75" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/board.png" height="75" />
 </div>
