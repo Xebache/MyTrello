@@ -27,11 +27,11 @@
 ## Screenshots
 
  <div display="flex" flex-direction="row" justify-content="space-around" align-items="center" flex-wrap="wrap" align="center">
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/login.png" height="95" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/boards.png" height="95" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/board.png" height="95" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/collaborators.png" height="95" />
-  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/card.png" height="95" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/login.png" height="100" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/boards.png" height="100" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/board.png" height="100" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/collaborators.png" height="100" />
+  <img alt="Screenshot" src="https://github.com/Xebache/MyTrello/blob/main/docs/card.png" height="100" />
 </div>
 
 ## Miscellaneous
