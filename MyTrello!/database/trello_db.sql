@@ -7,22 +7,22 @@
 -- Version du serveur :  10.4.13-MariaDB
 -- Version de PHP : 7.4.8
 
+--
+-- Base de données : `trello_db`
+--
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-DROP DATABASE IF EXISTS `prwb_2021_a02`;
-CREATE DATABASE IF NOT EXISTS `prwb_2021_a02` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `prwb_2021_a02`;
+DROP DATABASE IF EXISTS `trello_db`;
+CREATE DATABASE IF NOT EXISTS `trello_db` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `trello_db`;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données : `prwb_2021_a02`
---
 
 -- --------------------------------------------------------
 
@@ -46,8 +46,7 @@ INSERT INTO `board` (`ID`, `Title`, `Owner`, `CreatedAt`, `ModifiedAt`) VALUES
 (1, 'Projet PRWB', 1, '2020-10-11 17:48:59', NULL),
 (2, 'Projet ANC3', 3, '2020-10-11 17:48:59', NULL),
 (4, 'Boulot', 5, '2020-11-25 18:54:53', NULL),
-(5, 'Collabs', 1, '2021-05-22 17:03:01', NULL),
-(6, 'Plein de carte pour calendar', 1, '2021-05-22 17:20:28', NULL);
+(5, 'Collabs', 1, '2021-05-22 17:03:01', NULL);
 
 -- --------------------------------------------------------
 
@@ -79,35 +78,7 @@ INSERT INTO `card` (`ID`, `Title`, `Body`, `Position`, `CreatedAt`, `ModifiedAt`
 (6, 'Enoncé itération 2', '', 0, '2020-11-27 13:07:54', NULL, 5, 1, NULL),
 (7, 'un peu de collab', '', 0, '2021-05-22 17:03:23', '2021-05-22 17:04:46', 1, 16, '2021-05-29'),
 (8, 'des collabs', '', 1, '2021-05-22 17:03:49', '2021-05-22 17:04:36', 1, 16, '2021-05-29'),
-(9, 'beaucoup de collabs', '', 2, '2021-05-22 17:04:04', '2021-05-22 17:04:27', 1, 16, '2021-05-29'),
-(10, 'Woody', 'J\'ai un serpent dans ma botte\r\n', 0, '2021-05-22 17:20:46', '2021-05-22 17:31:46', 1, 17, '2021-06-04'),
-(11, 'Buzz', 'Vers l\'infini et l\'au-dela.', 1, '2021-05-22 17:20:49', '2021-05-22 17:31:58', 1, 17, '2021-06-11'),
-(12, 'Pile-Poil', 'Vif comme le vent Pile-Poil\r\n', 2, '2021-05-22 17:20:55', '2021-05-22 17:32:12', 1, 17, '2021-06-12'),
-(13, 'Jessy', '', 3, '2021-05-22 17:21:00', '2021-05-22 17:28:13', 1, 17, '2021-05-26'),
-(14, 'Papy Pépite', 'Je danse en boîte.', 0, '2021-05-22 17:21:05', '2021-05-22 17:32:41', 1, 18, '2021-06-18'),
-(15, 'Mr patate', '', 1, '2021-05-22 17:21:09', '2021-05-22 17:30:04', 1, 18, '2021-06-26'),
-(16, 'Mme patate', '', 2, '2021-05-22 17:21:14', '2021-05-22 17:30:14', 1, 18, '2021-07-09'),
-(17, 'Soldat de plomb', 'A vos ordres, Commandant.\r\n', 3, '2021-05-22 17:21:19', '2021-05-22 17:32:27', 1, 18, '2021-07-11'),
-(18, 'La bergère', '', 0, '2021-05-22 17:21:24', '2021-05-22 17:30:34', 1, 19, '2021-07-02'),
-(19, 'Léodagan', 'Je dis déjà pas merci dans ma langue, je risque pas de l\'apprendre en Picte', 1, '2021-05-22 17:25:15', '2021-05-22 17:33:06', 1, 19, '2021-07-11'),
-(20, 'Arthur', 'Je vois que ca bien avancé encore cette semaine', 2, '2021-05-22 17:25:19', '2021-05-22 17:33:40', 1, 19, '2021-07-19'),
-(21, 'Venec', 'Moi, je préfère quand même quand c\'est vous le roi.', 3, '2021-05-22 17:25:23', '2021-05-22 17:33:57', 1, 19, '2021-07-27'),
-(22, 'Le père Blaise', 'En voila une bonne idée. Faisons la liste des cons, en plus c\'est bien, ca va me faire gratter du papier.', 4, '2021-05-22 17:25:32', '2021-05-22 17:34:28', 1, 19, '2021-07-31'),
-(23, 'très long mot', 'yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees', 0, '2021-05-22 17:34:40', '2021-05-22 17:34:59', 1, 20, '2021-06-07'),
-(24, 'très long texte', 'On la trouvait plutôt jolie, Lily. Elle arrivait des Somalie, Lily. Dans un bateau plein d\'immigrés, qui venaient tous de leur plein gré, vider les poubelles à Paris. Elle croyait qu\'on était égaux, Lily. Au pays de Voltaire et d\'Hugo, Lily. Mais pour Debussy en revanche, il faut deux noires pour une blanche, ca fait un sacré distinguo. Elle aimait tant la liberté, Lily, elle rêvait de fraternité, Lily. Un hôtelier rue Secret-tant, lui a précisé en arrivant qu\'on ne servait que des blanc. Elle a déchargé des cageots, Lily, elle s\'est tapée les sales boulots, Lily, elle crie pour vendre des choux-fleurs, dans la rue ses frères de couleur, l\'accompagne au marteau piqueur. Et quand on l\'appelait blanche -Neige Lily, elle se laissait plus prendre au piège, Lily. Elle trouvait ca très amusant, même s\'il fallait serrer les dents, ils auraient été trop content.', 1, '2021-05-22 17:34:44', '2021-05-22 17:41:23', 1, 20, '2021-06-07'),
-(25, 'carte 1', '', 0, '2021-05-22 17:42:08', '2021-05-22 17:43:00', 1, 4, '2021-07-07'),
-(26, 'carte 2', '', 1, '2021-05-22 17:42:11', NULL, 1, 4, NULL),
-(27, 'carte 3', '', 0, '2021-05-22 17:42:15', '2021-05-22 17:42:38', 1, 5, '2021-05-25'),
-(28, 'carte 4', '', 1, '2021-05-22 17:42:18', '2021-05-22 17:42:52', 1, 5, '2021-06-17'),
-(29, 'carte 5', '', 0, '2021-05-22 17:42:21', '2021-05-22 17:42:28', 1, 6, '2021-05-22'),
-(30, 'un truc', '', 0, '2021-05-22 17:43:26', '2021-05-22 17:45:23', 1, 11, '2021-05-22'),
-(31, 'un autre truc', '', 1, '2021-05-22 17:43:30', '2021-05-22 17:45:03', 1, 11, '2021-07-20'),
-(32, 'un ptit machin', '', 2, '2021-05-22 17:43:36', '2021-05-22 17:44:52', 1, 11, '2021-07-03'),
-(33, 'un ptit zinzin', '', 0, '2021-05-22 17:43:40', '2021-05-22 17:44:06', 1, 12, '2021-05-30'),
-(34, 'qui passe par ici', '', 1, '2021-05-22 17:43:44', '2021-05-22 17:44:16', 1, 12, '2021-06-18'),
-(35, 'et qui repasse par la', '', 2, '2021-05-22 17:43:49', '2021-05-22 17:44:24', 1, 12, '2021-06-30'),
-(36, 'et qui va toucher', '', 3, '2021-05-22 17:43:53', '2021-05-22 17:44:32', 1, 12, '2021-07-05'),
-(37, 'les petits machins', '', 4, '2021-05-22 17:43:59', '2021-05-22 17:44:44', 1, 12, '2021-06-20');
+(9, 'beaucoup de collabs', '', 2, '2021-05-22 17:04:04', '2021-05-22 17:04:27', 1, 16, '2021-05-29');
 
 -- --------------------------------------------------------
 
@@ -132,8 +103,7 @@ INSERT INTO `collaborate` (`Board`, `Collaborator`) VALUES
 (5, 2),
 (5, 3),
 (5, 4),
-(5, 5),
-(5, 6);
+(5, 5);
 
 -- --------------------------------------------------------
 
@@ -165,11 +135,7 @@ INSERT INTO `column` (`ID`, `Title`, `Position`, `CreatedAt`, `ModifiedAt`, `Boa
 (12, 'Ne pas perdre de vue', 1, '2020-11-25 18:55:17', NULL, 4),
 (13, 'Pour hier', 2, '2020-11-25 18:55:32', NULL, 4),
 (15, 'Trop tard', 3, '2020-11-25 18:56:11', NULL, 4),
-(16, 'Colonne', 0, '2021-05-22 17:03:18', NULL, 5),
-(17, 'colonne 1', 0, '2021-05-22 17:20:32', NULL, 6),
-(18, 'col 2', 1, '2021-05-22 17:20:35', NULL, 6),
-(19, 'col3', 2, '2021-05-22 17:20:40', NULL, 6),
-(20, 'très long', 3, '2021-05-22 17:34:33', NULL, 6);
+(16, 'Colonne', 0, '2021-05-22 17:03:18', NULL, 5);
 
 -- --------------------------------------------------------
 
@@ -243,15 +209,15 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`ID`, `Mail`, `FullName`, `Password`, `RegisteredAt`, `Role`) VALUES
-(1, 'boverhaegen@epfc.eu', 'Boris Verhaegen', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
-(2, 'bepenelle@epfc.eu', 'Benoît Penelle', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
-(3, 'brlacroix@epfc.eu', 'Bruno Lacroix', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'user'),
-(4, 'xapigeolet@epfc.eu', 'aXavier Pigeolet', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'admin'),
-(5, 'galagaffe@epfc.eu', 'Gaston Lagaffe', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-11-25 18:46:55', 'user'),
-(6, 'test@epfc.eu', 'test', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 16:59:43', 'user'),
-(7, 'test2@epfc.eu', 'testbis', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:06', 'admin'),
-(8, 'test1@epfc.eu', 'testbisbis', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:30', 'admin'),
-(9, 'test3@epfc.eu', 'testbisbisbis', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:41', 'user');
+(1, 'user1@mail.com', 'User Semel', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
+(2, 'user2@mail.com', 'User Bis', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
+(3, 'user3@mail.com', 'User Ter', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'user'),
+(4, 'user4@mail.com', 'User Quater', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'admin'),
+(5, 'user5@mail.com', 'User Quinquies', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-11-25 18:46:55', 'user'),
+(6, 'test@epfc.eu', 'Test Semel', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 16:59:43', 'user'),
+(7, 'test2@epfc.eu', 'Test Bis', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:06', 'admin'),
+(8, 'test3@epfc.eu', 'Test Ter', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:30', 'admin'),
+(9, 'test4@epfc.eu', 'Test Quater', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:41', 'user');
 
 --
 -- Index pour les tables déchargées

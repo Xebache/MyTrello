@@ -1,6 +1,0 @@
-{
-    "require": {
-        "guzzlehttp/guzzle": "^7.0",
-        "imangazaliev/didom": "^1.16"
-    }
-}
