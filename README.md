@@ -12,7 +12,6 @@
 ## Description
 
  As mentionned before, the application is Trello-like and is very similar in its utilisation.
-
  The user creates and manages boards, columns and cards. 
 
  A registered user creates a board; he becomes the owner of that board and can manage it entirely.
