@@ -19,6 +19,8 @@
 
  The admins have access to all the boards of the database and have the right to edit, delete them.
  They also manage a list of all the users, creating, editing or deleting them.
+
+ Columns and cards are draggable, all contents are editable (each modification is saved in the database)
   
  If a card has an expiration date, it appears in the calendar. 
   
