@@ -38,4 +38,7 @@
 
  ### Installation
 
+ The site is not deployed but can run locally.
+ Import the database in phpMyAdmin. In `config/prod.ini`, make sure `mysql_path` correspond to the local Web server. Type http://localhost/trello/MyTrello!/setup in a browser to install the database.
+
  ### List of users
