@@ -42,3 +42,53 @@
  Import the database in phpMyAdmin. In `config/prod.ini`, make sure `mysql_path` correspond to the local Web server. Type http://localhost/trello/MyTrello!/setup in a browser to install the database.
 
  ### List of users
+
+ user1@mail.com', 'User Semel', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
+(2, 'user2@mail.com', 'User Bis', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:46:19', 'admin'),
+(3, 'user3@mail.com', 'User Ter', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'user'),
+(4, 'user4@mail.com', 'User Quater', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-10-11 17:47:20', 'admin'),
+(5, 'user5@mail.com', 'User Quinquies', '56ce92d1de4f05017cf03d6cd514d6d1', '2020-11-25 18:46:55', 'user'),
+(6, 'test@epfc.eu', 'Test Semel', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 16:59:43', 'user'),
+(7, 'test2@epfc.eu', 'Test Bis', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:06', 'admin'),
+(8, 'test3@epfc.eu', 'Test Ter', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:30', 'admin'),
+(9, 'test4@epfc.eu', 'Test Quater', '56ce92d1de4f05017cf03d6cd514d6d1', '2021-05-22 17:48:41', 'user
+
+ <table align="center">
+    <thead>
+        <tr>
+            <th>Name</th><th>Mail</th><th>Password</th><th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>User Semel</td><td>user1@mail.com</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>User Bis</td><td>user2@mail.com</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>User Ter</td><td>user3@mail.com</td><td>Password1,</td><td>user</td>
+        </tr>
+        <tr>
+            <td>User Quater</td><td>user4@mail.com</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>User Quinquies</td><td>user5@mail.com</td><td>Password1,</td><td>user</td>
+        </tr>
+        <tr>
+            <td>Test Semel</td><td>test@epfc.eu</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>Test Bis</td><td>test2@epfc.eu</td><td>Password1,</td><td>user</td>
+        </tr>
+        <tr>
+            <td>Test Ter</td><td>test3@epfc.eu</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>Test Quater</td><td>test4@epfc.eu</td><td>Password1,</td><td>admin</td>
+        </tr>
+        <tr>
+            <td>Test Semel</td><td>user1@mail.com</td><td>Password1,</td><td>user</td>
+        </tr>
+    </tbody>
+ </table>
